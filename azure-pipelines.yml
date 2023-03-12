@@ -26,14 +26,8 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    export PYTHONPATH=src
+    export PYTHONPATH=src/mypackage
     pytest
   displayName: 'pytest'
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(agent.builddirectory)'
-    Contents: '**/*'
-    TargetFolder: '$(build.artifactstagingdirectory)'
 
 
