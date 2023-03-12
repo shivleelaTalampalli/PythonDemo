@@ -47,3 +47,4 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'PythonBuildFile'
     publishLocation: 'Container'
+    TargetPath: src/mypackage/dist
