@@ -33,6 +33,5 @@ steps:
 - script : |
     python setup.py sdist bdist_wheel
   displayName: Build package
-  workingDirectory: $(srcDirectory)
 
 
