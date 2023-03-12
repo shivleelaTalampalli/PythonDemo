@@ -1,4 +1,4 @@
-from src.app import home
+import app
 
 def test_home():
-    assert home() == "Hello, World!"
+    assert app.home() == "Hello, World!"
