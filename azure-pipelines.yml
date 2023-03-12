@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: cwt-hmn-app
+  vmImage: cwt-hmn-ap
 strategy:
   matrix:
     Python27:
