@@ -38,7 +38,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)/src/mypackage/dist'
+    SourceFolder: '$(agent.builddirectory)/s/src/mypackage/dist'
     Contents: '**/*.gz'
     TargetFolder: '$(build.artifactstagingdirectory)'
 
