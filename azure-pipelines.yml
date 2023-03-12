@@ -31,6 +31,7 @@ steps:
   displayName: 'pytest'
 
 - script : |
+    export PYTHONPATH=src/mypackage
     python setup.py sdist bdist_wheel
   displayName: Build package
 
