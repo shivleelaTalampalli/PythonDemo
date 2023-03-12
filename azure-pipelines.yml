@@ -36,4 +36,9 @@ steps:
   displayName: Build package
   workingDirectory: src/mypackage
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(agent.builddirectory)'
+    Contents: '**/mypackage*'
+    TargetFolder: '$(build.artifactstagingdirectory)'
 
