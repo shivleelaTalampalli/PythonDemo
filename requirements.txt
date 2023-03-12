@@ -1,4 +1,4 @@
-flask8
+flask
 pytest
 pip
 wheel
