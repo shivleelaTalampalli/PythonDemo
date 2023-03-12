@@ -34,5 +34,6 @@ steps:
     export PYTHONPATH=src/mypackage
     python setup.py sdist bdist_wheel
   displayName: Build package
+  workingDirectory: src/mypackage
 
 
