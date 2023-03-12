@@ -44,7 +44,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/src/mypackage/dist'
     ArtifactName: 'PythonBuildFile'
     publishLocation: 'Container'
-    TargetPath: src/mypackage/dist
