@@ -2,6 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+print("Runing Python script")
 @app.route("/")
 def home():
     return "Hello, World!"
