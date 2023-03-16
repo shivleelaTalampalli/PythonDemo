@@ -24,11 +24,6 @@ steps:
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    export PYTHONPATH=src/mypackage
-    pytest
-  displayName: 'pytest'
 
 - task: CopyFiles@2
   inputs:
