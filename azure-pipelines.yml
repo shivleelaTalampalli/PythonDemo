@@ -36,6 +36,12 @@ steps:
     Contents: '**/*'
     TargetFolder: '$(build.artifactstagingdirectory)'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(agent.builddirectory)/s/'
+    Contents: '**/require*.txt'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
