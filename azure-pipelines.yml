@@ -30,15 +30,9 @@ steps:
     pytest
   displayName: 'pytest'
 
-- script : |
-    export PYTHONPATH=src/mypackage
-    python setup.py sdist bdist_wheel
-  displayName: Build package
-  workingDirectory: src/mypackage
-
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)/s/src/mypackage/dist'
+    SourceFolder: '$(agent.builddirectory)/s/src/mypackage/'
     Contents: '**/*'
     TargetFolder: '$(build.artifactstagingdirectory)'
 
